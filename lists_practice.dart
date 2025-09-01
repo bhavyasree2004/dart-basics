@@ -31,6 +31,6 @@ void main() {
   print(lowest);
   var uniqueMarks = marks.toSet().toList();
   print(uniqueMarks);
-  marks.where((mark)=>mark>60).forEach((mark)=>print(mark));
+  marks.where((mark) => mark > 60).forEach((mark) => print(mark));
   print(marks.join('-'));
 }
