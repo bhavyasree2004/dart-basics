@@ -14,21 +14,19 @@
 //
 // Otherwise, print "Enter amount in multiples of 100".
 import 'dart:io';
-void main(){
-  int bal=5000;
+
+void main() {
+  int bal = 5000;
   print("Enter amount to withdraw: ");
-  int amount=int.parse(stdin.readLineSync()!);
-  if(amount>bal){
+  int amount = int.parse(stdin.readLineSync()!);
+  if (amount > bal) {
     print("Insufficient balance");
-  }
-  else if(amount<=0){
+  } else if (amount <= 0) {
     print("Invalid amount");
-  }
-  else if(amount%100==0){
-    bal-=amount;
+  } else if (amount % 100 == 0) {
+    bal -= amount;
     print('Remaining balance: ${bal}');
-  }
-  else{
+  } else {
     print("Enter the amount in multiples of 100");
   }
 }
