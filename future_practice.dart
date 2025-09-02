@@ -5,8 +5,9 @@ void main() {
       })
       .catchError((e) {
         print('Error: ${e}');
-      }).whenComplete(() {
+      })
+      .whenComplete(() {
         print("Finshed computation");
-      },);
+      });
   print("Waiting for a value....");
 }
