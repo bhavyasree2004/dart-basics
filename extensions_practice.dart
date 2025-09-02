@@ -25,7 +25,7 @@ class Student {
 }
 
 void main() {
-  Student s1 = new Student('Bhavya', [22, 33, 44, 55, 66, 88]);
+  Student s1 = Student('Bhavya', [22, 33, 44, 55, 66, 88]);
   print(s1.averageMarks());
   print(s1.hasPassed());
 }

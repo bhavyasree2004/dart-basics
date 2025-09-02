@@ -24,8 +24,8 @@ class Bike extends Vehicle {
 }
 
 void main() {
-  Car car = new Car("suzuki", 2022, 4);
+  Car car = Car("suzuki", 2022, 4);
   car.showDetails();
-  Bike bike = new Bike('Hero Honda', 2021, "Scooty");
+  Bike bike = Bike('Hero Honda', 2021, "Scooty");
   bike.showDetails();
 }
